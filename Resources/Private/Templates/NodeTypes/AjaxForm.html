@@ -1,0 +1,12 @@
+<div{attributes -> f:format.raw()}>
+    <f:if condition="{formIdentifier}">
+        <f:then>
+            <div class="ajax-form" data-ajax="ajax-loaded-form" data-identifier="{formIdentifier}" data-preset-name="{presetName}" data-dimension="{node.context.dimensions.language.0}">
+                <i class="fa fa-spinner fa-pulse"></i>
+            </div>
+        </f:then>
+        <f:else>
+            <p><f:translate id="ajaxform.addIdentifier" package="ObisConcept.NeosAjaxForm"/></p>
+        </f:else>
+    </f:if>
+</div>

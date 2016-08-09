@@ -1,0 +1,5 @@
+'TYPO3.Neos:ContentCollection':
+  constraints:
+    nodeTypes:
+      'TYPO3.Neos.NodeTypes:Form': FALSE
+      'ObisConcept.NeosAjaxForm:AjaxForm': TRUE

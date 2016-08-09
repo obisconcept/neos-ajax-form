@@ -1,0 +1,9 @@
+-
+  name: 'AjaxFormEndpoint'
+  uriPattern: 'form/{language}/{presetName}/{formIdentifier}'
+  defaults:
+    '@package': 'ObisConcept.NeosAjaxForm'
+    '@controller': 'AjaxForm'
+    '@action': 'index'
+    '@format': 'html'
+  httpMethods: ['GET','POST']

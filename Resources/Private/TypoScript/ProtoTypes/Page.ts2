@@ -1,0 +1,31 @@
+prototype(TYPO3.Neos:Page) {
+
+    head {
+
+        ajaxFormJs = TYPO3.TypoScript:Tag {
+            @position = 'after javascripts'
+            tagName = 'script'
+            attributes {
+                id = 'bootstrap-js'
+                type = 'text/javascript'
+                src = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://ObisConcept.NeosAjaxForm/Public/JavaScript/main.min.js'
+                }
+            }
+        }
+
+        ajaxFormBackendJs = TYPO3.TypoScript:Tag {
+            @position = 'after javascripts'
+            tagName = 'script'
+            attributes {
+                type = 'text/javascript'
+                src = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://ObisConcept.NeosAjaxForm/Public/JavaScript/backend.min.js'
+                }
+            }
+            @if.onlyRenderWhenNotInLiveWorkspace = ${node.context.workspace.name != 'live'}
+        }
+
+    }
+
+}

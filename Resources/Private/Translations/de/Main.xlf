@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="ObisConcept.NeosAjaxForm" source-language="en" datatype="plaintext" target-language="de">
+		<body>
+			<trans-unit id="ajaxform.addIdentifier" xml:space="preserve">
+				<source>Please select a valid form identifier in the inspector</source>
+				<target xml:lang="de" state="translated">Bitte wählen Sie einen Formular-Identifier im Inspektor aus</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

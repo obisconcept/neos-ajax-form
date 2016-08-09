@@ -11,7 +11,7 @@
     "support": {
         "email": "dev@obis-concept.de"
     },
-    "description": "A Neos CMS package to submit forms with ajax",
+    "description": "A Neos CMS package to load and submit forms with ajax",
     "license": ["MIT"],
     "require": {
         "typo3/neos": "~2.2.0",
