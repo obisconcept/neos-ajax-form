@@ -6,7 +6,7 @@ Add the package in your site package composer.json
 
 ```
 "require": {
-  "obisconcept/neos-ajax-form": "~1.0"
+  "obisconcept/neos-ajax-form": "~1.0.0"
 }
 ```
 

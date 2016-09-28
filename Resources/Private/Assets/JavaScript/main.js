@@ -4,6 +4,15 @@ $(document).ready(function() {
 
 });
 
+window.initButtonClickHandler = function() {
+
+    $('.ajax-form button[type="submit"]').on('click', function() {
+        $('.ajax-form button[type="submit"]').removeAttr('clicked');
+        $(this).attr('clicked', 'true');
+    });
+
+}
+
 window.initAjaxForm = function() {
 
     $.each($('.ajax-form'), function (idx, ajaxForm) {
@@ -20,7 +29,9 @@ window.initAjaxForm = function() {
             var formURL = formObj.attr('action');
             var formData = new FormData(this);
 
-            formData.append($(this).find('button[type="submit"]').attr('name'), $(this).find('button[type="submit"]').attr('value'));
+            var trigger = $(this).find('button[clicked="true"]');
+
+            formData.append($(trigger).attr('name'), $(trigger).attr('value'));
 
             $.ajax({
 
@@ -40,6 +51,8 @@ window.initAjaxForm = function() {
 
                     $(ajaxForm).find('.ajax-content').replaceWith(data);
 
+                    initButtonClickHandler();
+
                     if ($(ajaxForm).find('.g-recaptcha').length) {
                       var captcha = $(ajaxForm).find('.g-recaptcha');
                       var sitekey = captcha.data('sitekey');
@@ -55,6 +68,8 @@ window.initAjaxForm = function() {
         });
 
         $(ajaxForm).load(formAjaxUrl + ' .ajax-content', function () {
+
+            initButtonClickHandler();
 
             $(this).css("min-height", $(this).css("height"));
 
