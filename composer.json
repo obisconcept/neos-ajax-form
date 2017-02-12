@@ -1,6 +1,6 @@
 {
     "name": "obisconcept/neos-ajax-form",
-    "type": "typo3-flow-plugin",
+    "type": "neos-flow-plugin",
     "authors": [
         {
             "name": "obis|CONCEPT GmbH & Co. KG",
@@ -11,19 +11,19 @@
     "support": {
         "email": "dev@obis-concept.de"
     },
-    "description": "A Neos CMS package to load and submit forms with ajax",
+    "description": "A Neos CMS package to load and submit forms with ajax.",
     "license": ["MIT"],
     "require": {
-        "typo3/neos": "~2.3.0",
-        "typo3/neos-nodetypes": "~2.3.0"
+        "neos/neos": "~3.0.0",
+        "neos/nodetypes": "~3.0.0"
     },
     "suggest": {
         "obisconcept/neos-bootstrap": "Provides jQuery which is required by the plugin",
         "obisconcept/neos-jquery": "Add this package, if you don't use obisconcept/neos-bootstrap package or if you don't inluded jQuery by yourself"
     },
     "autoload": {
-        "psr-0": {
-            "ObisConcept\\NeosAjaxForm": "Classes"
+        "psr-4": {
+            "ObisConcept\\NeosAjaxForm\\": "Classes"
         }
     }
 }
