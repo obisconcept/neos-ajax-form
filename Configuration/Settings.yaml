@@ -1,10 +1,12 @@
-TYPO3:
-  Neos:
-    typoScript:
-      autoInclude:
-        'ObisConcept.NeosAjaxForm': TRUE
 
+Neos:
+  Neos:
     userInterface:
       translation:
         autoInclude:
-          'ObisConcept.NeosAjaxForm': ['Main', 'NodeTypes/*']
+          ObisConcept.NeosAjaxForm:
+            - Main
+            - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        ObisConcept.NeosAjaxForm: true

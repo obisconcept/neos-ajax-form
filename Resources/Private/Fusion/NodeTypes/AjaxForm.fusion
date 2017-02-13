@@ -1,4 +1,4 @@
-prototype(ObisConcept.NeosAjaxForm:AjaxForm) < prototype(TYPO3.Neos.NodeTypes:Form) {
+prototype(ObisConcept.NeosAjaxForm:AjaxForm) < prototype(Neos.NodeTypes:Form) {
 
     templatePath = 'resource://ObisConcept.NeosAjaxForm/Private/Templates/NodeTypes/AjaxForm.html'
 

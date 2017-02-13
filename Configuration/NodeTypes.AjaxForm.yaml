@@ -1,4 +1,6 @@
+
 'ObisConcept.NeosAjaxForm:AjaxForm':
-  superTypes: ['TYPO3.Neos.NodeTypes:Form']
+  superTypes:
+    'Neos.NodeTypes:Form': true
   ui:
     label: i18n

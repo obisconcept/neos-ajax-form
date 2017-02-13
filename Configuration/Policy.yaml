@@ -1,10 +1,10 @@
 privilegeTargets:
-  'TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
     'ObisConcept.NeosAjaxForm':
       matcher: 'method(ObisConcept\NeosAjaxForm\Controller\AjaxFormController->(index)Action())'
 
 roles:
-  'TYPO3.Flow:Everybody':
+  'Neos.Flow:Everybody':
     privileges:
       -
         privilegeTarget: 'ObisConcept.NeosAjaxForm'

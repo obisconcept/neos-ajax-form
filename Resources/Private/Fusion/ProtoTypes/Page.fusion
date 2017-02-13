@@ -1,25 +1,25 @@
-prototype(TYPO3.Neos:Page) {
+prototype(Neos.Neos:Page) {
 
     head {
 
-        ajaxFormJs = TYPO3.TypoScript:Tag {
+        ajaxFormJs = Neos.Fusion:Tag {
             @position = 'after javascripts'
             tagName = 'script'
             attributes {
                 id = 'bootstrap-js'
                 type = 'text/javascript'
-                src = TYPO3.TypoScript:ResourceUri {
+                src = Neos.Fusion:ResourceUri {
                     path = 'resource://ObisConcept.NeosAjaxForm/Public/JavaScript/main.min.js'
                 }
             }
         }
 
-        ajaxFormBackendJs = TYPO3.TypoScript:Tag {
+        ajaxFormBackendJs = Neos.Fusion:Tag {
             @position = 'after javascripts'
             tagName = 'script'
             attributes {
                 type = 'text/javascript'
-                src = TYPO3.TypoScript:ResourceUri {
+                src = Neos.Fusion:ResourceUri {
                     path = 'resource://ObisConcept.NeosAjaxForm/Public/JavaScript/backend.min.js'
                 }
             }

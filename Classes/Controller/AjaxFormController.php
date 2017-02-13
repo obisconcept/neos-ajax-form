@@ -2,10 +2,10 @@
 
 namespace ObisConcept\NeosAjaxForm\Controller;
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Mvc\Controller\ActionController;
-use TYPO3\Flow\Security\Context;
-use TYPO3\Flow\I18n\Locale;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Mvc\Controller\ActionController;
+use Neos\Flow\Security\Context;
+use Neos\Flow\I18n\Locale;
 
 /**
  * Class AjaxFormController
@@ -17,7 +17,7 @@ class AjaxFormController extends ActionController {
 
     /**
      * @Flow\Inject
-     * @var \TYPO3\Flow\I18n\Service
+     * @var \Neos\Flow\I18n\Service
      */
     protected $localeService;
 
