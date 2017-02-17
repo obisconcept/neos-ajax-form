@@ -1,5 +1,8 @@
-
 Neos:
+  Flow:
+    mvc:
+      routes:
+        ObisConcept.NeosAjaxForm: true
   Neos:
     userInterface:
       translation:
