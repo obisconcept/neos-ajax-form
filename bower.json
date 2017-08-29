@@ -1,0 +1,20 @@
+{
+  "name": "obisconcept-neos-ajax-form",
+  "description": "A Neos CMS package to load and submit forms with ajax",
+  "main": [
+    "Resources/Private/Assets/JavaScript/main.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "Classes",
+    "Resources/Fusion",
+    "Resources/Templates",
+    "Resources/Translations",
+    "composer.json",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 3"
+  }
+}
