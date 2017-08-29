@@ -12,6 +12,7 @@ prototype(Neos.Neos:Page) {
                     path = 'resource://ObisConcept.NeosAjaxForm/Public/JavaScript/main.min.js'
                 }
             }
+            @if.includeFrontendAssets = ${Configuration.setting('ObisConcept.includeFrontendAssets')}
         }
 
         ajaxFormBackendJs = Neos.Fusion:Tag {
@@ -24,6 +25,7 @@ prototype(Neos.Neos:Page) {
                 }
             }
             @if.onlyRenderWhenNotInLiveWorkspace = ${node.context.workspace.name != 'live'}
+            @if.includeFrontendAssets = ${Configuration.setting('ObisConcept.includeFrontendAssets')}
         }
 
     }
