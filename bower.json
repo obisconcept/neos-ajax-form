@@ -7,9 +7,10 @@
   "license": "MIT",
   "ignore": [
     "Classes",
-    "Resources/Fusion",
-    "Resources/Templates",
-    "Resources/Translations",
+    "Configuration",
+    "Resources/Private/Fusion",
+    "Resources/Private/Templates",
+    "Resources/Private/Translations",
     "composer.json",
     "gulpfile.js",
     "package.json"
