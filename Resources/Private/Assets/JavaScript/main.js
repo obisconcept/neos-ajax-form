@@ -23,7 +23,7 @@ window.initAjaxForm = function() {
 
         var formAjaxUrl = location.protocol + '//' + location.host + '/form/'  + ( dimension != '' ? dimension + '/' : '' ) + presetName + '/' + formIdentifier;
 
-        $(ajaxForm).on('submit', 'form', function (e) {
+        $(ajaxForm).off('submit').on('submit', 'form', function (e) {
 
             var formObj = $(this);
             var formURL = formObj.attr('action');
