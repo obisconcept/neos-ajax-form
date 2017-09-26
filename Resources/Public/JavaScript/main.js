@@ -21,9 +21,9 @@ window.initAjaxForm = function() {
         var presetName = $(ajaxForm).attr('data-preset-name');
         var dimension = $(ajaxForm).attr('data-dimension');
 
-        var formAjaxUrl = location.protocol + '//' + location.host + '/form/'  + ( dimension != '' ? dimension + '/' : '' ) + presetName + '/' + formIdentifier;
+        var formAjaxUrl = location.protocol + '//' + location.host + '/form/'  + ( dimension != '' ? dimension + '/' : 'en/' ) + presetName + '/' + formIdentifier;
 
-        $(ajaxForm).on('submit', 'form', function (e) {
+        $(ajaxForm).off('submit').on('submit', 'form', function (e) {
 
             var formObj = $(this);
             var formURL = formObj.attr('action');
