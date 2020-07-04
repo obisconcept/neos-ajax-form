@@ -11,7 +11,7 @@ Neos:
         autoInclude:
           ObisConcept.NeosAjaxForm:
             - Main
-            - 'NodeTypes/*'
+            - "NodeTypes/*"
     fusion:
       autoInclude:
         ObisConcept.NeosAjaxForm: true
