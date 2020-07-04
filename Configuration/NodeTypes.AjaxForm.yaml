@@ -1,6 +1,5 @@
-
-'ObisConcept.NeosAjaxForm:AjaxForm':
+"ObisConcept.NeosAjaxForm:AjaxForm":
   superTypes:
-    'Neos.NodeTypes:Form': true
+    "Neos.NodeTypes:Form": true
   ui:
     label: i18n

@@ -1,9 +1,5 @@
 if (typeof document.addEventListener === 'function') {
-
-    document.addEventListener('Neos.PageLoaded', function(event) {
-
-        initAjaxForm();
-
-    });
-
+  document.addEventListener('Neos.PageLoaded', function (event) {
+    initAjaxForm();
+  });
 }

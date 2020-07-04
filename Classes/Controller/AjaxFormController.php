@@ -13,7 +13,8 @@ use Neos\Flow\I18n\Locale;
  * @package ObisConcept\NeosAjaxForm
  * @subpackage Controller
  */
-class AjaxFormController extends ActionController {
+class AjaxFormController extends ActionController
+{
 
     /**
      * @Flow\Inject
@@ -34,12 +35,10 @@ class AjaxFormController extends ActionController {
      * @param Context $securityContext
      * @return void
      */
-    public function injectSecurityContext(Context $securityContext) {
-
+    public function injectSecurityContext(Context $securityContext)
+    {
         $this->securityContext = $securityContext;
-
     }
-
 
     /**
      * AJAX form index action
@@ -49,15 +48,13 @@ class AjaxFormController extends ActionController {
      * @param string $presetName
      * @return void
      */
-    public function indexAction($language, $formIdentifier, $presetName) {
-
+    public function indexAction($language, $formIdentifier, $presetName)
+    {
         $this->localeService->getConfiguration()->setCurrentLocale(
             new Locale($language)
         );
 
         $this->view->assign('formIdentifier', $formIdentifier);
         $this->view->assign('presetName', $presetName);
-
     }
-
 }

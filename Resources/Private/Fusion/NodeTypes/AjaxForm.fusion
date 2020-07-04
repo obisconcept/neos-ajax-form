@@ -1,5 +1,3 @@
 prototype(ObisConcept.NeosAjaxForm:AjaxForm) < prototype(Neos.NodeTypes:Form) {
-
-    templatePath = 'resource://ObisConcept.NeosAjaxForm/Private/Templates/NodeTypes/AjaxForm.html'
-
+  templatePath = 'resource://ObisConcept.NeosAjaxForm/Private/Templates/NodeTypes/AjaxForm.html'
 }

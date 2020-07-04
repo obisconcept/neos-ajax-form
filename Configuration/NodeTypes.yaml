@@ -1,5 +1,5 @@
-'Neos.Neos:ContentCollection':
+"Neos.Neos:ContentCollection":
   constraints:
     nodeTypes:
-      'Neos.NodeTypes:Form': FALSE
-      'ObisConcept.NeosAjaxForm:AjaxForm': TRUE
+      "Neos.NodeTypes:Form": FALSE
+      "ObisConcept.NeosAjaxForm:AjaxForm": TRUE

@@ -3,10 +3,12 @@
 <div class="ajax-content">
     <f:if condition="{formIdentifier}">
         <f:then>
-            <form:render persistenceIdentifier="{formIdentifier}" presetName="{presetName}"/>
+            <form:render persistenceIdentifier="{formIdentifier}" presetName="{presetName}" />
         </f:then>
         <f:else>
-            <p><f:translate id="ajaxform.addIdentifier" package="ObisConcept.NeosAjaxForm"/></p>
+            <p>
+                <f:translate id="ajaxform.addIdentifier" package="ObisConcept.NeosAjaxForm" />
+            </p>
         </f:else>
     </f:if>
 </div>
